@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#profile">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <nav id="hamburger-nav">
+        <div class="logo"></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        <div class="menu-links">
+            <li><a href="#profile" onclick="toggleMenu()">About</a></li>
+            <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+        </div>
+    </nav>
+    
+
+
+
+    <section id="profile">
+        <div class="section_pic-container">
+        <img src="./assets/icon-5.png" alt="profile picture">
+    <script src="script.js"></script>
+    </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm </p>
+            <h1 class="title">Anthony Campos</h1>
+            <p1 class="section_text_p2">software engineer (one day)</p1>
+            
+            <div class="btn-container">
+                <button 
+                    class="btn btn-color-2"
+                    onclick="window.open(`http://www.linkedin.com/in/anthony-campos-b78303217`)">
+                    LinkedIn
+                </button>
+                <button 
+                    class="btn btn-color-1"
+                    onclick="location.href=`./#contact`">
+                    Contact
+                </button>
+            </div>
+            <div id="socials-container"></div>
+        </div>
+          </div>
+        </div>
+    </section>
+
+
+
+    <div class="code-text-container">
+        <div id="textbox">
+          <span class="text first-text">cout</span>
+          <span class="text second-text"><< </span>
+          <span class="text third-text">"</span>
+          <span class="text fourth-text">hello world</span>
+          <span class="text fifth-text">"</span>
+          <span class="text sixth-text">;</span>
+          <span class="text seventh-text"></span>
+        </div>
+    </div>
+    
+
+
+
+    <section id="education">
+        <p class="section_text_p1"></p>
+        <h1 class="title">Education</h1>
+        <div class="">
+            <div class="education-details-container">
+                <div class="education-containers">
+                    <div class="details-container">
+                        <img src="./assets/social-sharing-logo.png" alt="college logo" class="college-icon">
+                    </div>
+                    <div class="details-container">
+                        <h2>Pomona College</h2>
+                        <h3>B.A. Computer Science</h3>
+                        <p>Class of '26</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <br><p>Previous coursework:</p><br><br>
+                    <p>- Intro to CS in Python w/ Lab (CSCI051)</p><br>
+                    <p>- Linear Algebra (MATH060)</p><br>
+                    <p>- Multivariable Calculus (MATH032)</p><br>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/transparent_down_arrow.png" alt="arrow icon" class="icon arrow animate__animated animate__bounce animate__infinite animate__slower"  onclick="location.href='./#projects'"/>
+    </section>
+
+
+
+
+
+
+    <section id="projects">
+        <h1 class="title">Projects</h1>
+        <div class="education-details-container"> 
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/sentiment_analysis.png" alt="project 1" class="project-img">
+                </div>
+                <h3 class="education-sub-title project-title">Sentiment Analysis (Python)</h3>
+                <div class="details-container">
+                    <p>Program conducts sentiment analysis on any text file resulting in either a "positive or negative."</p><br><br>
+                </div>
+
+                <div class="article-container">
+                    <img src="./assets/website_icon3.png" alt="project 1" class="project-img">
+                </div>
+                <h3 class="education-sub-title project-title">Personal Website (HTML/CSS/JavaScript)</h3>
+                <div class="details-container">
+                    <p>Personal website created using HTML, CSS, and JS. Used various tecniques to implement animations and responsiveness.</p><br><br>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+
+    <section id="contact">
+        <h1 class="title">Connect here</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img
+            src="./assets/email-6.png"
+            alt="email icon"
+            class="icon contact-icon"/>
+                <p><a href="mailto:acni2022@mymail.pomona.edu">Email</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img
+                src="./assets/linkedin.png"
+                alt="LinkedIn icon"
+                class="icon contact-icon"/>
+                <p><a href="http://www.linkedin.com/in/anthony-campos-b78303217">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img
+                src="./assets/github.png"
+                alt="Github icon"
+                class="icon contact-icon"/>
+                <p><a href="https://github.com/AnthonyCampos123">Github</a></p>
+            </div>
+        </div> 
+    </section>
+
+
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#profile">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p> &#169; Coded by Anthony Campos 2023 </p>
+    </footer>
+
+
+
+
+
+    <script type="text/javascript">
+        const text1 = document.querySelector(".first-text");
+        const text2 = document.querySelector(".second-text");
+        const text3 = document.querySelector(".third-text");
+        const text4 = document.querySelector(".fourth-text");
+        const text5 = document.querySelector(".fifth-text");
+        const text6 = document.querySelector(".sixth-text");
+        const text7 = document.querySelector(".seventh-text");
+    
+        const textLoad = () => {
+          setTimeout(() => {
+    
+            text1.textContent = "cout";
+            text1.style.color = "#dadada";
+    
+            text2.textContent = "<< ";
+            text2.style.color = "#c792e9"; 
+    
+            text3.textContent = "\"";
+            text3.style.color = "#d9f5dd"; 
+    
+            text4.textContent = "hello world";
+            text4.style.color = "#edc38d"; 
+    
+            text5.textContent = "\"";
+            text5.style.color = "#d9f5dd"; 
+    
+            text6.textContent = ";";
+            text6.style.color = "#dadada"; 
+
+            text7.textContent = "";
+            text7.style.color = "#000000"; 
+    
+          }, 0);
+          setTimeout(() => {
+            text1.textContent = "print";
+            text1.style.color = "#c5e479";
+    
+            text2.textContent = "(";
+            text2.style.color = "#ffd602"; 
+    
+            text3.textContent = "\"";
+            text3.style.color = "#d9f5dd"; 
+    
+            text4.textContent = "hello world";
+            text4.style.color = "#edc38d"; 
+    
+            text5.textContent = "\"";
+            text5.style.color = "#d9f5dd"; 
+    
+            text6.textContent = ")";
+            text6.style.color = "#fcd406"; 
+
+            text7.textContent = "";
+            text7.style.color = "#000000"; 
+    
+        
+          }, 8000);
+          setTimeout(() => {
+            text1.textContent = "alert";
+            text1.style.color = "#81aaff";
+    
+            text2.textContent = "(";
+            text2.style.color = "#ffd602"; 
+    
+            text3.textContent = "\"";
+            text3.style.color = "#d9f5dd"; 
+    
+            text4.textContent = "hello world";
+            text4.style.color = "#ecc38d"; 
+    
+            text5.textContent = "\"";
+            text5.style.color = "#d9f5dd"; 
+    
+            text6.textContent = ")";
+            text6.style.color = "#ffd602";
+            
+            text7.textContent = ";";
+            text7.style.color = "#dadada"; 
+            
+          }, 16000);
+        }
+    
+        textLoad();
+        setInterval(textLoad, 24000)
+      </script>
+</body>
+</html> 
